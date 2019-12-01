@@ -1,11 +1,11 @@
 import React from 'react'
 
-function ItemList({items}) {
+function ItemList({ items }) {
   return items.length ? (
     <ul>{items.map(i => <li key={i}>{i}</li>)}</ul>
   ) : (
-    'no items'
-  )
+      <span>no items</span>
+    )
 }
 
 export default ItemList
